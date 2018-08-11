@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+ /* background-color: #d7d2cc; */ 
+        
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Style the header */
+.header {
+    background-image: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500?k=6&m=537331500&s=612x612&w=0&h=VMx4K6hcGW0hLT-5dFRzUo4GFn1Uh6RR3k0n51lxRw0=");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding: 100px;
+    background-position: center;
+}
+
+.header h1 {
+    position: absolute;
+   float: left;
+   text-align: left;
+   opacity: 0.8;   
+   font-family: arial;
+   font-size: 80px;
+   line-height: 65px;
+   color: white;
+   background-color: black;
+   letter-spacing: 0.8px; 
+   margin: auto;
+    
+}
+
+.header h3 { 
+   float: left;
+   opacity: 0.8;   
+   font-family: arial;
+   font-size: 24px;
+   line-height: 50px;
+   color: white;
+  
+   letter-spacing: 0.8px; 
+   margin: 10px;
+   padding: 10px;
+     
+}
+
+/* Menu bar style */
+.menu {
+    background-color: black;
+    opacity: 0.9;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+
+/* Menu bar links*/
+.menu a {  
+    display: inline-block;   
+    color:white;    
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/* Change color on hover */
+.menu a:hover {
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+}
+
+ img {  
+    
+    padding: 80px;
+}
+
+.row h2 {
+    font-family:sans-serif;
+    opacity: 0.6;
+    font-size: 56px;
+    height: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none; 
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout  */
+@media screen and (max-width:600px) {
+    .column {
+     width: 100%;
+    
+    }
+    
+     img {
+        display: none;
+    }
+}
+
+/* Style the footer */
+.footer {
+    /*background-color: #60179113;*/
+    opacity: 0.8;
+    padding: 45px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    letter-spacing: 0.9;
+  
+}
+.footer .border {
+    border: solid 1px;
+    border-color: red;
+   
+}
+.footer ul {
+    border: none; 
+   
+}
+.footer ul button {
+    background: #ff4500;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    font-size: 22px;   
+    
+}
+
+.footer ul button:hover {
+    border: 1px solid blue;
+}
+
+/*General settings for social media buttons */
+
+.footer .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.footer .fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;  
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+  
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    font-family: sans-serif;
+    opacity: 0.5;    
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+
+#aboutMe {
+    background-color: black;
+    opacity: 0.9;
+    font-family: sans-serif;
+    font-size: 16px;
+    border: none;
+    color: white;    
+}
+
+#aboutMe:hover{      
+  background-color: yellow;
+  color: black;
+  padding: 14px;
+  
+
+    
+}
+
